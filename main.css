@@ -1,0 +1,115 @@
+<style>
+
+html
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+head
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    width: 100%;
+    height: 8%;
+    border-bottom: 10px solid #DEDEDE;
+    text-align: left;
+}
+
+#header_logo{
+    display: inline-block;
+    vertical-align: text-top;
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header_logo_img{
+    height: 95%;
+    width: auto;
+    margin: 2%;
+}
+
+#header_element{
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center;
+    padding-top: 1.5%;
+    width: 15%;
+    height: 85%;
+    font-size: 125%;
+}
+
+#header_element2{
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: center;
+    padding-top: 0.7%;
+    width: 15%;
+    height: 85%;
+    font-size: 125%;
+}
+
+#content{
+    margin: 0px;
+    padding: 0px;
+}
+
+#content_box{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 50px solid navy;
+}
+
+#content_side{
+    vertical-align: text-top;
+    display: inline-block;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content_center{
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#content_title{
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#content_main_image{
+    padding: 0px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+#content_para_name{
+    margin-bottom: 0.5%;
+}
+
+</style>
