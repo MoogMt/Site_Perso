@@ -1,4 +1,9 @@
-var content_box = {
-    contentTitle: "Title",
-    contentBody: "StuffyStuff",
-};
+"use strict";
+
+const loutre=2;
+
+let potate="patate";
+
+function showMessage() {
+  alert( 'Hello everyone!' );
+}
