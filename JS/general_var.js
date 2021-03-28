@@ -1,1 +1,2 @@
 language="fr"
+page="welcome"
