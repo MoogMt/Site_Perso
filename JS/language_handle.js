@@ -66,6 +66,13 @@ function moveToResearch()
   if ( page != "research" )
   {
     page = "research";
+    var main_content = document.getElementById("main_content");
+    // Checking that the main content part to modify is here
+    if  ( main_content != null )
+    {
+      // Import the text from research
+      main_content.innerHTML = "<div w3-include-html=Content/\"research_fr.html\"></div> "
+    }
   }
 };
 function moveToPProjects()
@@ -118,5 +125,25 @@ var research_head = document.getElementById("head_research")
 if ( research_head != null )
 {
   research_head.addEventListener("click", moveToResearch );
+}
+var pproject_head = document.getElementById("head_pproject")
+if ( pproject_head != null )
+{
+  pproject_head.addEventListener("click", moveToPProjects );
+}
+var skillset_head = document.getElementById("head_skillset")
+if ( skillset_head != null )
+{
+  skillset_head.addEventListener("click", moveToSkillSet );
+}
+var bio_head = document.getElementById("head_bio")
+if ( bio_head != null )
+{
+  research_head.addEventListener("click", moveToBio );
+}
+var contact_head = document.getElementById("head_contact")
+if ( contact_head != null )
+{
+  contact_head.addEventListener("click", moveToContact );
 }
 //--------------------------------------------
