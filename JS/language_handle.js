@@ -1,5 +1,7 @@
 "use strict";
 
+// Language handler functions
+//---------------------------------------
 function changeHeaderToFrench()
 {
   document.getElementById("head_research").innerHTML = "Recherche";
@@ -17,10 +19,9 @@ function changeHeaderToEnglish()
   document.getElementById("head_bio").innerHTML      = "CV";
   document.getElementById("head_contact").innerHTML  = "Contact";
 };
-
 function changeWelcometoFrench()
 {
-  welcome_msg_span = document.getElementById("welcome_msg")
+  var welcome_msg_span = document.getElementById("welcome_msg");
   if ( welcome_msg_span != null )
   {
     welcome_msg_span.innerHTML = "Bienvenue sur mon site personnel!";
@@ -28,13 +29,12 @@ function changeWelcometoFrench()
 };
 function changeWelcometoEnglish()
 {
-  welcome_msg_span = document.getElementById("welcome_msg")
+  var welcome_msg_span = document.getElementById("welcome_msg");
   if ( welcome_msg_span != null )
   {
     welcome_msg_span.innerHTML = "Welcome on my personal website!";
   }
 };
-
 function changeToFrench()
 {
   if ( language != "fr" ) {
@@ -43,10 +43,6 @@ function changeToFrench()
     if ( page == "welcome" )
     {
       changeWelcometoFrench();
-    }
-    if ( page == "research ")
-    {
-      changeResearchtoFrench();
     }
   }
 };
@@ -59,32 +55,68 @@ function changeToEnglish()
     {
       changeWelcometoEnglish();
     }
-    if ( page == "research ")
-    {
-      changeResearchtoEnglish();
-    }
   }
 };
+//---------------------------------------
 
+// Functions to move from one page to the next
+//--------------------------------------------
 function moveToResearch()
 {
-  
-}
-
-lang_fr_head = document.getElementById("fr_id")
-if ( lang_fr_head != null )
+  if ( page != "research" )
+  {
+    page = "research";
+  }
+};
+function moveToPProjects()
 {
-  lang_fr_head.addEventListener("click", changeToFrench );
-}
+  if ( page != "pproject" )
+  {
+    page = "pproject";
+  }
+};
+function moveToSkillSet()
+{
+  if ( page != "skillset" )
+  {
+    page = "skillset";
+  }
+};
+function moveToBio()
+{
+  if ( page != "bio" )
+  {
+    page = "bio";
+  }
+};
+function moveToContact()
+{
+  if ( page != "contact" )
+  {
+    page = "contact";
+  }
+};
+//--------------------------------------------
 
-lang_en_head = document.getElementById("en_id")
+// Language Change Event Listeners
+//--------------------------------------------
+var lang_en_head = document.getElementById("en_id");
 if ( lang_en_head != null )
 {
   lang_en_head.addEventListener("click", changeToEnglish );
 }
+var lang_fr_head = document.getElementById("fr_id");
+if ( lang_fr_head != null )
+{
+  lang_fr_head.addEventListener("click", changeToFrench );
+}
+//--------------------------------------------
 
-research_head = document.getElementById("head_research")
+// Pages change Event Listeners
+//--------------------------------------------
+var research_head = document.getElementById("head_research")
 if ( research_head != null )
 {
   research_head.addEventListener("click", moveToResearch );
 }
+//--------------------------------------------
