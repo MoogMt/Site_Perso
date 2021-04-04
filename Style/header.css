@@ -11,9 +11,9 @@
     border-bottom: 2.5px solid #aeb6bf;
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 0%;
     background-color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 #header_element
 {

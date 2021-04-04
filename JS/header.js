@@ -1,12 +1,15 @@
+"use strict";
+
 class Header
 {
   // Variables
   //--------------------------------------------------------
-  research   = "";
-  perso_proj = "";
-  skillset   = "";
-  bio        = "";
-  contact    = "";
+  // HTML values
+  research   = "Research";
+  perso_proj = "Personnal projects";
+  skillset   = "Skill Set";
+  bio        = "CV";
+  contact    = "Contact";
   //--------------------------------------------------------
 
   // Constructor
@@ -112,6 +115,153 @@ class Header
   //--------------------------------------
 };
 
-header = new Header();
+class HeaderCSS
+{
+  // Variables
+  //--------------------------------------------------------
+  width  = "";
+  height = "";
+  position = ["","","",""]
+  margin   = ["","","",""]
+  padding  = ["","","",""]
+  //--------------------------------------------------------
+
+  // Constructor
+  //--------------------------------------------------------
+  constructor( height_="", width_="", position_=["0px","0px","0px","0px"], margin_=["0px","0px","0px","0px"], padding_=["0px","0px","0px","0px"] )
+  {
+    this.height   = height_;
+    this.width    = width_;
+    this.position = position_;
+    this.margin   = margin_;
+    this.padding  = padding_;
+  };
+  //--------------------------------------------------------
+
+  // Accessors
+  //--------------------------------------
+  get height()
+  {
+    return this.height;
+  };
+  get width()
+  {
+    return this.width;
+  };
+  get position()
+  {
+    return this.position;
+  };
+  get margin()
+  {
+    return this.margin;
+  };
+  get padding()
+  {
+    return this.padding;
+  };
+  //--------------------------------------
+
+  // Setters
+  //--------------------------------------
+  setHeight( height_ )
+  {
+    this.height = height_.toString().concat( "px" );
+    return;
+  };
+  setHeightUnit( height_, unit )
+  {
+    if ( unit == "px" || unit == "%" )
+    {
+      this.height = height_.toString().concat( unit );
+    }
+    return;
+  };
+  setWidth( width_ )
+  {
+    this.width = width_.toString().concat( "px" );
+    return;
+  };
+  setWidthUnit( width_, unit )
+  {
+    if ( unit == "px" || unit == "%" )
+    {
+      this.width = width_.toString().concat( unit );
+    }
+    return;
+  };
+  setPosition( position_ )
+  {
+    this.position = position_.toString().concat( "px" );
+    return;
+  };
+  setPositionUnit( position_, unit )
+  {
+    if( unit == "px" || unit == "%" )
+    {
+      for ( var i=0; i<4 ; i++ )
+      {
+        this.position[i] = position_[i].toString().concat( unit );
+      }
+    }
+    return;
+  };
+  setMargin( margin_ )
+  {
+    this.margin = margin_.toString().concat( "px" );
+    return;
+  };
+  setMarginUnit( margin_, unit )
+  {
+    if( unit == "px" || unit == "%" )
+    {
+      this.margin = ["","","",""]
+      for ( var i=1; i<=4 ; i++ )
+      {
+        this.margin[i] = margin_[i].toString().concat( unit );
+      }
+    }
+    return;
+  };
+  setPadding( position_ )
+  {
+    this.padding = padding_.toString().concat( "px" );
+    return;
+  };
+  setPaddingUnit( padding_, unit )
+  {
+    if( unit == "px" || unit == "%" )
+    {
+      this.padding = ["","","",""]
+      for ( var i=1; i<=4 ; i++ )
+      {
+        this.padding[i] = padding_[i].toString().concat( unit );
+      }
+    }
+    return;
+  };
+  //--------------------------------------
+
+  // ApplyCSS
+  //--------------------------------------------------------
+  apply()
+  {
+    var header_id = document.getElementById("header");
+    if ( header_id != null )
+    {
+      header_id.style.height = this.height;
+      header_id.style.width  = this.width;
+      header_id.style.top    = this.position[0];
+      header_id.style.bottom = this.position[1];
+      header_id.style.left   = this.position[2];
+      header_id.style.right  = this.position[3];
+    };
+    return;
+  };
+  //--------------------------------------------------------
+}
+
+var header = new Header();
+var header_css = new HeaderCSS();
 
 header.changeLanguage( language );
