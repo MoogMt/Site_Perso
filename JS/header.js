@@ -113,6 +113,7 @@ class Header
     document.getElementById("head_contact").innerHTML  = this.contact;
   };
   //--------------------------------------
+
 };
 
 class HeaderCSS
@@ -242,13 +243,31 @@ class HeaderCSS
   };
   //--------------------------------------
 
-  // ApplyCSS
+  //
+  updateDimension()
+  {
+    if ( window.innerWidth > 1350 )
+    {
+      var percent_heigh = 8;
+      this.height = Math.round( percent_heigh/100*window.innerHeight );
+      this.width  = window.innerWidth;
+    }
+    else
+    {
+      var percent_heigh = 12.0;
+      this.height = Math.round( percent_heigh/100*window.innerHeight );
+      this.width  = window.innerWidth;
+    }
+  };
+
+  // Update the CSS of Header
   //--------------------------------------------------------
-  apply()
+  update()
   {
     var header_id = document.getElementById("header");
     if ( header_id != null )
     {
+      this.updateDimension()
       header_id.style.height = this.height;
       header_id.style.width  = this.width;
       header_id.style.top    = this.position[0];
@@ -263,5 +282,3 @@ class HeaderCSS
 
 var header = new Header();
 var header_css = new HeaderCSS();
-
-header.changeLanguage( language );

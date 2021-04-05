@@ -1,5 +1,9 @@
 "use strict";
 
+header.changeLanguage( language );
+header_css.update()
+header_css.setPositionUnit( [0,0,0,0], "%" )
+
 // Language Change Event Listeners
 //--------------------------------------------
 function changeLanguageHeader( language_ )
