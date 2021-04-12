@@ -1,4 +1,4 @@
-<style>
+ <style>
 
 #stuff
 {
@@ -18,5 +18,13 @@
 #welcome_msg
 {
 }
+
+ #these
+ {
+     font-family: 'Titillium Web', sans-serif;
+     color: white;
+     width: 0%;
+     height: 0%;
+ }
 
 </style>

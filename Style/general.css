@@ -26,4 +26,9 @@ a
     color: black;
 }
 
+#italic
+{
+    text-decoration: italic;
+}
+
 </style>

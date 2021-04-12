@@ -244,6 +244,7 @@ class HeaderCSS
   //--------------------------------------
 
   //
+  //--------------------------------------------------------
   updateDimension()
   {
     if ( window.innerWidth > 1350 )
@@ -259,6 +260,7 @@ class HeaderCSS
       this.width  = window.innerWidth;
     }
   };
+  //--------------------------------------------------------
 
   // Update the CSS of Header
   //--------------------------------------------------------
@@ -280,5 +282,5 @@ class HeaderCSS
   //--------------------------------------------------------
 }
 
-var header = new Header();
+var header     = new Header();
 var header_css = new HeaderCSS();
