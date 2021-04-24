@@ -1,0 +1,56 @@
+thesis_content_en = '[
+  {
+    "title"         : "Context: Why CO2 under extreme conditions?",
+    "img_path"      : "",
+    "img_content"   : "Thesis Frontend Image",
+    "frame_content" : "Although carbon dioxide is widely known for its impact on the climate and atmosphere, it also plays an important role in the geophysical events such as earthquakes and volcanic events. Even deeper, in the depth of the lower mantle of Earth it has been suggested that carbon dioxide may form through various reactions between carbonates and other constituents. Under those extreme conditions, ranging from 2000 to 3000 Kelvin and 20 to a 100 GPa, it is not expected that carbon dioxide remains present for long periods of time or manage to form large CO2 inclusions but rather recombines with its surroundings chemicals species to form other carbonates, forming complex polymers in the process. However, those chemical reactions may still be impacted by the property of carbon dioxide at those extreme conditions.",
+  },
+  {
+    "title"         : "Brief state of the art (2016-2019)",
+    "img_path"      : "",
+    "img_content"   : "Carbon Cycle Illustration",
+    "frame_content" : "In this thesis, we aimed at understanding precisely the properties of carbon dioxide under those extreme conditions in order to shed light on still largely experimentally unexplored part of its phase diagram. Indeed, despite intensive experimental effort, it is not yet known how the molecular liquid phase polymerizes, whether it would directly morph into the experimentally observed crystalline polymeric phase CO2-V or go through a theoretically predicted polymeric liquid phase."
+  },
+  {
+    "title"         : "Dimerization of Carbon Dioxide",
+    "img_path"      : "",
+    "img_content"   : "Dimerization mechanism",
+    "frame_content" : ""
+  },
+  {
+    "title"         : "Proposed phase diagram",
+    "img_path"      : "",
+    "img_content"   : "Proposed phase diagram",
+    "frame_content" : "Our main results on the thermodinal point of view was the observation of a reactive molecular liquid phase in an intermediate region lying between 20 and 50GPa above 2000 K. In this area of the phase diagram which slightly interacts with the geotherm, we find that molecules of CO2 can combine into either groups of two, forming a C2O4 dimer, which often results in exchange of oxygen between CO2 molecules, or C3O6 ring-like molecule. Although those molecules have very short (at best 1ps) lifetimes, they constitute an intermediate kind of behavior between a purely molecular liquid and a polymeric one as they correspond to the onset of chemical interactions between said molecules that is a prerequisite to form the complex polymers theoretically described by Boates et al. in 2012."
+  },
+  {
+    "title"         : "Computational Methods",
+    "img_path"      : "",
+    "img_content"   : "DFT Scheme",
+    "frame_content" : "Our main results on the thermodinal point of view was the observation of a reactive molecular liquid phase in an intermediate region lying between 20 and 50GPa above 2000 K. In this area of the phase diagram which slightly interacts with the geotherm, we find that molecules of CO2 can combine into either groups of two, forming a C2O4 dimer, which often results in exchange of oxygen between CO2 molecules, or C3O6 ring-like molecule. Although those molecules have very short (at best 1ps) lifetimes, they constitute an intermediate kind of behavior between a purely molecular liquid and a polymeric one as they correspond to the onset of chemical interactions between said molecules that is a prerequisite to form the complex polymers theoretically described by Boates et al. in 2012."
+  },
+  {
+    "title"         : "Methods developement (1) - Bonding analysis",
+    "img_path"      : "",
+    "img_content"   : "ELF graph",
+    "frame_content" : ""
+  },
+  {
+    "title"         : "Methods developement (2) - Markov State Models",
+    "img_path"      : "",
+    "img_content"   : "ELF graph",
+    "frame_content" : ""
+  },
+  {
+    "title"         : "Conclusion",
+    "img_path"      : "",
+    "img_content"   : "None",
+    "frame_content" : ""
+  },
+  {
+    "title"         : "Bibliography",
+    "img_path"      : "",
+    "img_content"   : "None",
+    "frame_content" : ""
+  }
+]';
